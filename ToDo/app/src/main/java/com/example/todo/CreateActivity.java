@@ -60,6 +60,7 @@ public class CreateActivity extends AppCompatActivity implements View.OnClickLis
             finish();
         else if (responseIndex==1)
         {
+            Integer start = 1;
             String nom = mNom.getText().toString();
 
             if (nom.isEmpty())
@@ -71,6 +72,7 @@ public class CreateActivity extends AppCompatActivity implements View.OnClickLis
                 Toast.makeText(this, "Enregistrement réussie", Toast.LENGTH_SHORT).show();
                 Intent intent1 = new Intent(CreateActivity.this, MainActivity.class);
                 intent1.putExtra("nom", nom);
+                intent1.putExtra("start", start);
                 // démarrer une autre activité et recevoir un résultat
                 //startActivityForResult(enregistrementIntent,ENREGISTREMENT_REQUEST_CODE);
                 startActivity(intent1);

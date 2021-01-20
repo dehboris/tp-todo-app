@@ -41,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
         setTitle("ToDo list");
         prefs = getPreferences(MODE_PRIVATE);
         createExampleList();
-        mTasks=getArrayList("TASK");
+        if (getArrayList("TASK") != null)
+            mTasks=getArrayList("TASK");
+
+
         buildRecyclerView();
 
         fab = (Button) findViewById(R.id.fab);
