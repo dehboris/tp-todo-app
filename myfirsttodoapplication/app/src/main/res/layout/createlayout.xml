@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/ediTache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:layout_margin="10sp"
+            android:background="@color/tache"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="30sp"
+            android:textColor="@color/noir"
+            android:text="@string/entrez_votre_tache" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_marginLeft="9sp"
+            android:textSize="20sp"
+            android:layout_width="394dp"
+            android:background="@color/vert"
+            android:layout_height="wrap_content"
+            android:textColor="@color/noir"
+            android:text="@string/enregistrer"
+            android:layout_marginStart="9sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
